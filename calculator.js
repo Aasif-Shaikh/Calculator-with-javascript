@@ -1,10 +1,10 @@
 function dark(){
 let dark = document.body.classList;
-dark.add('dark-mode')
+dark.toggle('dark-mode')
 }
-function light(){
+/* function light(){
   document.body.classList.remove('dark-mode')
-}
+} */
 
    const displayE1 = document.querySelector('.display-1');
    const displayE2 = document.querySelector('.display-2');
@@ -16,7 +16,7 @@ function light(){
       debugger
       if(this.innerHTML === '=' ){ 
         debugger
-        displayE2.innerHTML = eval(displayE2.innerHTML);
+        displayE2.innerHTML = eval(displayE2.innerHTML).toFixed(2);
         displayE1.innerHTML = eval(displayE2.innerHTML);
       }
       else{ 
